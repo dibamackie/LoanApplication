@@ -21,5 +21,4 @@ Auto Loan Application is a JavaFX-based desktop application for calculating and 
 - JavaFX SDK (or Maven dependency for JavaFX)
 - Maven (if using `pom.xml`)
 
-## How to Run
-1. Clone the repository:
+
