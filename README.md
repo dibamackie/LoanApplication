@@ -1,24 +1,121 @@
 # Auto Loan Application
 
-Auto Loan Application is a JavaFX-based desktop application for calculating and managing auto loans. Developed as part of a workshop, it allows users to input customer information, vehicle details, and loan terms, then calculates payments and generates amortization schedules.
+The **Auto Loan Application** is a **JavaFX-based desktop application** designed to calculate and manage auto loans through an intuitive graphical interface. Developed as part of a workshop, the application allows users to enter customer information, vehicle details, and loan terms, then computes loan payments and generates a detailed amortization schedule.
+
+This project demonstrates practical financial calculations, clean UI design, and structured application architecture using Java and JavaFX.
+
+---
 
 ## Features
-- **Login System**: Authenticate users with hard-coded credentials.
-- **Customer Information**: Capture full name, phone, city, and province with real-time validation.
-- **Vehicle Information**: Select vehicle type (Car, Truck, Family Van), age (New, Used), and price.
-- **Loan Information**: Input down payment, select interest rate (0.99%, 1.99%, 2.99%, or custom), loan duration (12–96 months), and payment frequency (Weekly, Bi-Weekly, Monthly).
-- **Calculate Payments**: Compute fixed-rate loan payments with formatted currency output.
-- **Save and Load Rates**: Save loan data in-memory and load it back into the form.
-- **Amortization Schedule**: Display a detailed payment breakdown over the loan term.
+
+### Authentication
+- Login system with hard-coded credentials
+- Ensures controlled access to the application
+
+### Customer Information
+- Capture customer details:
+  - Full name
+  - Phone number
+  - City
+  - Province (dropdown selection)
+- Real-time input validation
+
+### Vehicle Information
+- Select vehicle type:
+  - Car
+  - Truck
+  - Family Van
+- Select vehicle condition:
+  - New
+  - Used
+- Enter vehicle price
+
+### Loan Information
+- Enter down payment amount
+- Select interest rate:
+  - 0.99%
+  - 1.99%
+  - 2.99%
+  - Custom rate
+- Choose loan duration using a slider (12–96 months)
+- Select payment frequency:
+  - Weekly
+  - Bi-weekly
+  - Monthly
+
+### Loan Calculation
+- Calculate fixed-rate loan payments
+- Display estimated payment with formatted currency output
+
+### Saved Rates
+- Save loan rate configurations in memory
+- View saved rates in a separate window
+- Load or remove saved rate entries
+
+### Amortization Schedule
+- Generate a detailed amortization table including:
+  - Payment number
+  - Payment date
+  - Payment amount
+  - Interest payment
+  - Principal payment
+  - Remaining balance
+
+---
 
 ## Project Structure
-- **Java Controllers**: `LoginController`, `AutoLoanController`, `AmortizationController`, `SavedRatesController`
-- **FXML Files**: `logIn.fxml`, `autoLoanApplication.fxml`, `amortizationSchedule.fxml`, `savedRates.fxml`
-- **Business Logic**: `LoanCalculation` interface, `FixedRateLoan` implementation, `Payment` class
 
-## Prerequisites
-- Java 17 or later
-- JavaFX SDK (or Maven dependency for JavaFX)
-- Maven (if using `pom.xml`)
+### Controllers
+- `LoginController`
+- `AutoLoanController`
+- `AmortizationController`
+- `SavedRatesController`
 
+### FXML Views
+- `logIn.fxml`
+- `autoLoanApplication.fxml`
+- `amortizationSchedule.fxml`
+- `savedRates.fxml`
 
+### Business Logic
+- `LoanCalculation` interface
+- `FixedRateLoan` implementation
+- `Payment` model class
+
+---
+
+## Tech Stack
+
+- **Language:** Java  
+- **UI Framework:** JavaFX  
+- **Concepts & Practices:**
+  - Object-Oriented Programming (OOP)
+  - MVC-style separation
+  - Event-driven programming
+  - Financial computation
+  - GUI-based application design
+
+---
+
+## Application Workflow
+
+1. User logs in with valid credentials
+2. Customer and vehicle information is entered
+3. Loan terms are selected
+4. Payment is calculated and displayed
+5. User may:
+   - Save loan rate details
+   - View saved rates
+   - Generate a full amortization schedule
+
+---
+
+## Author
+
+Developed by **Diba Makki**
+
+---
+
+## License
+
+This project is for educational and portfolio purposes.
